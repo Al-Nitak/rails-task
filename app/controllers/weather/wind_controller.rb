@@ -14,7 +14,7 @@ class Weather::WindController < ApplicationController
       @text = I18n.t("wind.strong")
     end
 
-    render json: {description: @text} , status: :created
+    render json: {description: @text} , status: :ok
   end
 
   def wind_params

@@ -11,7 +11,7 @@ class Weather::TemperatureController < ApplicationController
 
     end
 
-    render json: {description: @text} , status: :created
+    render json: {description: @text} , status: :ok
   end
 
   def temperature_params

@@ -14,7 +14,7 @@ class Weather::CloudsController < ApplicationController
 
     end
 
-    render json: {description: @text} , status: :created
+    render json: {description: @text} , status: :ok
   end
 
   def cloud_params
