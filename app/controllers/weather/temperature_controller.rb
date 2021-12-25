@@ -3,7 +3,7 @@ class Weather::TemperatureController < ApplicationController
 
   def create
     @temp =  temperature_params[:degrees].to_i
-    if @temp > 0
+    if @temp >= 0
       @text = I18n.t("temperature.above_zero", degrees: @temp)
 
     else
